@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DisplayPhotoForSearchController">
+   <children>
+      <ImageView fx:id="photo" fitHeight="307.0" fitWidth="463.0" layoutX="269.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="photoInfo" layoutX="130.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album name:&#9;&lt;name&gt;&#10;Caption:&#9;&#9;&lt;caption&gt;&#10;Date-Time:&#9;mm/dd/yyyy HH:MM:SS" wrappingWidth="618.8737182617188">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="130.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listOfTags" layoutX="261.0" layoutY="412.0" prefHeight="80.0" prefWidth="464.0" />
+   </children>
+</AnchorPane>

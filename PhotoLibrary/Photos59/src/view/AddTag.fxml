@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddTagController">
+   <children>
+      <Text layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Tag">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="tagValueInstructions" layoutX="14.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;rules for valid tag value&gt;" wrappingWidth="972.7511901855469">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Hyperlink layoutX="5.0" layoutY="61.0" onAction="#clickedExampleTags" prefHeight="45.0" prefWidth="508.0" text="See examples of tag type = tag value pairs">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="173.0" layoutY="229.0" prefHeight="35.0" prefWidth="187.0" text="Select a tag type:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="tagTypeComboBox" layoutX="382.0" layoutY="221.0" prefHeight="51.0" prefWidth="252.0">
+      	<items>
+      			<FXCollections fx:factory="observableArrayList">
+      				<String fx:value="location" />
+                	<String fx:value="person" />
+                	<String fx:value="event" />
+                	<String fx:value="animal" />
+                	<String fx:value="food" />
+                	<String fx:value="weather" />
+                	<String fx:value="nature" />
+                	<String fx:value="view" />
+                	<String fx:value="color" />
+                	<String fx:value="style" />
+                	<String fx:value="miscellaneous" />
+            	</FXCollections>
+      	</items>
+      </ComboBox>
+      <Label layoutX="173.0" layoutY="328.0" prefHeight="35.0" prefWidth="187.0" text="Enter a tag value:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tagValue" layoutX="387.0" layoutY="320.0" prefHeight="51.0" prefWidth="252.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <ButtonBar layoutX="739.0" layoutY="531.0" prefHeight="51.0" prefWidth="230.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#clickedDone" text="DONE" />
+            <Button mnemonicParsing="false" onAction="#clickedCancel" text="CANCEL" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

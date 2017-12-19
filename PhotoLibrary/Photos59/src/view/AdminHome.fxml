@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminHomeController">
+   <children>
+      <Text layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Home">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="256.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of Users:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listOfUsers" layoutX="249.0" layoutY="105.0" prefHeight="468.0" prefWidth="464.0" />
+      <Hyperlink layoutX="914.0" layoutY="10.0" onAction="#clickedLogout" text="Logout">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Hyperlink>
+      <ButtonBar layoutX="469.0" layoutY="62.0" prefHeight="40.0" prefWidth="246.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#clickedCreateNewUser" text="Create New User" />
+            <Button mnemonicParsing="false" onAction="#clickedDeleteUser" text="Delete User" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

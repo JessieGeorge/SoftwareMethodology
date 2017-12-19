@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchResultsController">
+   <children>
+      <Text layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Results" wrappingWidth="526.5253601074219">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <ButtonBar layoutX="534.0" layoutY="12.0" prefHeight="40.0" prefWidth="452.0">
+        <buttons>
+            <Button mnemonicParsing="false" onAction="#clickedSlideshow" prefHeight="25.0" prefWidth="249.0" text="Slideshow" />
+          <Button mnemonicParsing="false" onAction="#clickedCreateAlbumWithSearchResults" text="Create Album with Search Results" />
+        </buttons>
+      </ButtonBar>
+      <Button layoutX="931.0" layoutY="542.0" mnemonicParsing="false" onAction="#clickedOk" text="OK">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Hyperlink layoutX="13.0" layoutY="47.0" onAction="#clickedSeeSearchCriteria" text="See your search criteria">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Hyperlink>
+      <ScrollPane fx:id="scrollPane" layoutX="15.0" layoutY="97.0" prefHeight="437.0" prefWidth="971.0" />
+   </children>
+</AnchorPane>

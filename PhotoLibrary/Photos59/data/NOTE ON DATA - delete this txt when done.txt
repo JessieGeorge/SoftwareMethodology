@@ -1,0 +1,4 @@
+i think data should contain:
+Folders of username, each folder containing that user's albums with photos.
+One folder should be called stock. (i.e. the username is stock, it contains stock photos. stock photos should be given to all users.)
+One folder should be admin? (i.e. the username is admin and password is admin. I don't think admin has any photos, but admin will have list of users.)

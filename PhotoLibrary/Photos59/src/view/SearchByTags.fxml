@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchByTagsController">
+   <children>
+      <Text layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search by Tags">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="7.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How many TagType=TagValue pairs do you want to search by?" textAlignment="CENTER" wrappingWidth="678.0846862792969">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For example, if you want to search for photos where:&#10;1. Location = Paris&#10;2. Person = John&#10;3. Person = Betty&#10;Then it is 3 TagType=TagValue pairs. Therefore, enter 3.">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="limitStatement" layoutX="14.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="limit statement here">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label layoutX="14.0" layoutY="163.0" prefHeight="35.0" prefWidth="160.0" text="Enter Number:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numberOfTags" layoutX="184.0" layoutY="155.0" prefHeight="51.0" prefWidth="75.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <ButtonBar layoutX="739.0" layoutY="531.0" prefHeight="51.0" prefWidth="230.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#clickedDone" text="DONE" />
+            <Button mnemonicParsing="false" onAction="#clickedCancel" text="CANCEL" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

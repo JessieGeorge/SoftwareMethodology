@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ExampleTagsController">
+   <children>
+      <Text layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Example Tags">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Hyperlink layoutX="933.0" layoutY="12.0" onAction="#clickedBack" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Hyperlink>
+      <Text fx:id="exampleTags" layoutX="14.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag type&#9;&#9;&#9;&#9;Tag value&#10;&#10;location&#9;&#9;=&#9;&#9;Paris&#10;person&#9;&#9;=&#9;&#9;John Doe&#10;event&#9;&#9;=&#9;&#9;birthday&#10;animal&#9;&#9;=&#9;&#9;dog&#10;food&#9;&#9;&#9;=&#9;&#9;cheesecake&#10;weather&#9;&#9;=&#9;&#9;rainy day&#10;nature&#9;&#9;=&#9;&#9;flowers&#10;view&#9;&#9;&#9;=&#9;&#9;panorama&#10;color&#9;&#9;=&#9;&#9;blue&#10;style&#9;&#9;&#9;=&#9;&#9;silhouette&#10;miscellaneous&#9;=&#9;&#9;toy" wrappingWidth="954.940185546875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

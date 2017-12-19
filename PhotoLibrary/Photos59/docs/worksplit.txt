@@ -1,0 +1,3 @@
+For now, Karl is working on the back end, Jessie is working on the UI.
+
+We will edit and update this document if necessary.

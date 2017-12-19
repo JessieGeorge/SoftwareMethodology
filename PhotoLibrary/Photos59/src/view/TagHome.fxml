@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TagHomeController">
+   <children>
+      <Text fx:id="tagHeader" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags for photo &lt;name&gt; in album &lt;name&gt;" wrappingWidth="650.3857421875">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="limitStatement" layoutX="14.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note: You can't have more than &lt;limit&gt; tags for this photo">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="290.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of Tags:&#10;Format Tag Type = Tag Value" wrappingWidth="464.00000154972076">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listOfTags" layoutX="290.0" layoutY="173.0" prefHeight="413.0" prefWidth="464.0" />
+      <Hyperlink layoutX="923.0" layoutY="10.0" onAction="#clickedBack" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Hyperlink>
+      <ButtonBar layoutX="649.0" layoutY="10.0" prefHeight="40.0" prefWidth="234.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#clickedAddTag" text="Add Tag" />
+            <Button mnemonicParsing="false" onAction="#clickedEditTag" text="Edit Tag" />
+            <Button mnemonicParsing="false" onAction="#clickedDeleteTag" text="Delete Tag" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

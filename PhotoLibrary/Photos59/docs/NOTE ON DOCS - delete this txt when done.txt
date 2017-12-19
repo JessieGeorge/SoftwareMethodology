@@ -1,0 +1,5 @@
+docs should contain:
+GUI Storyboard pdf
+Work Split (txt or pdf)
+UML pdf
+Javadocs HTML
